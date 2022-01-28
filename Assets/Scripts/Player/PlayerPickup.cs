@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerPickup : MonoBehaviour
 {
     [SerializeField] private Pickup activePickup;
-    [SerializeField] private SphereCollider pickupCollider;
+    [SerializeField] private Transform holdPoint;
+    [SerializeField] private PickupTrigger pickupCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -33,18 +34,21 @@ public class PlayerPickup : MonoBehaviour
     {
         Pickup currentObject = null;
 
-        
+        if (pickupCollider.pickupsInRange.Count > 0) currentObject = pickupCollider.pickupsInRange[0];
 
         return currentObject;
     }
 
     private void DropObject()
     {
-
+        activePickup.DropMe();
+        activePickup = null;
     }
 
     private void PickUpObject(Pickup pickupObject)
     {
-
+        activePickup = pickupObject;
+        activePickup.PickMeUp(holdPoint);
+        pickupCollider.pickupsInRange.Remove(pickupObject);
     }
 }
