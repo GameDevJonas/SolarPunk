@@ -39,10 +39,12 @@ public class Pickup : MonoBehaviour
         myRb.useGravity = false;
         transform.position = holdPoint.position;
         transform.SetParent(holdPoint);
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
 
     public void DropMe()
     {
+        //transform.localRotation = Quaternion.Euler(0, 0, 0);
         transform.SetParent(null);
         myCollider.enabled = true;
         myRb.useGravity = true;

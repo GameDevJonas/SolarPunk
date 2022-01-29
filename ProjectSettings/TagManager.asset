@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickup
+  - SunSpot
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - UI
   - CameraCollision
   - PlayerIgnoreCol
-  - 
-  - 
+  - Ground
+  - Slope
   - 
   - 
   - 

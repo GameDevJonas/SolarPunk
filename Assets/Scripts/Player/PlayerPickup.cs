@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class PlayerPickup : MonoBehaviour
 {
+    private PlayerManager manager;
+
     [SerializeField] private Pickup activePickup;
     [SerializeField] private Transform holdPoint;
     [SerializeField] private PickupTrigger pickupCollider;
+
+    private void Awake()
+    {
+        manager = GetComponent<PlayerManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -41,12 +48,16 @@ public class PlayerPickup : MonoBehaviour
 
     private void DropObject()
     {
+        manager.StartCoroutine(manager.PickUpInputs());
+        manager.anim.PickUpObject(false);
         activePickup.DropMe();
         activePickup = null;
     }
 
     private void PickUpObject(Pickup pickupObject)
     {
+        manager.StartCoroutine(manager.PickUpInputs());
+        manager.anim.PickUpObject(false);
         activePickup = pickupObject;
         activePickup.PickMeUp(holdPoint);
         pickupCollider.pickupsInRange.Remove(pickupObject);
