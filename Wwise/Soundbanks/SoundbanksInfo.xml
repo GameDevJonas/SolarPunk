@@ -16,7 +16,7 @@
 			<ShortName>soundbank_master</ShortName>
 			<Path>soundbank_master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="98439365" Name="Play_player_footsteps" ObjectPath="\Events\Default Work Unit\Play_player_footsteps">
+				<Event Id="98439365" Name="Play_player_footsteps" ObjectPath="\Events\Default Work Unit\Play_player_footsteps" DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<DefaultSwitchValue>{D84F4D21-7B71-4493-B1F9-908772FA3799}</DefaultSwitchValue>
 					<SwitchContainers/>
 				</Event>
