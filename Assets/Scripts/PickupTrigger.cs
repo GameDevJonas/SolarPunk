@@ -25,7 +25,7 @@ public class PickupTrigger : MonoBehaviour
     {
         if (other.CompareTag("Pickup"))
         {
-            pickupsInRange.Add(other.GetComponent<Pickup>());
+            if(other.GetComponent<Pickup>().enabled) pickupsInRange.Add(other.GetComponent<Pickup>());
         }
         if (other.CompareTag("Wall"))
         {

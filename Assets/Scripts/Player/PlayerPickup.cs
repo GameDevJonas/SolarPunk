@@ -6,7 +6,7 @@ public class PlayerPickup : MonoBehaviour
 {
     private PlayerManager manager;
 
-    [SerializeField] private Pickup activePickup;
+    public Pickup activePickup;
     [SerializeField] private Transform holdPoint;
     public PickupTrigger pickupCollider;
 

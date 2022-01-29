@@ -53,4 +53,10 @@ public class Pickup : MonoBehaviour
         if (playerDistance > 0) transform.position = new Vector3(transform.position.x + 0.4f, transform.position.y, transform.position.z);
         else transform.position = new Vector3(transform.position.x - 0.4f, transform.position.y, transform.position.z);
     }
+
+    public void SetStaticPosition(Transform targetPoint)
+    {
+        transform.position = targetPoint.position;
+        //this.enabled = false;
+    }
 }
