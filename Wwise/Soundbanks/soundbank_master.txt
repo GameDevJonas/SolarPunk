@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	98439365	Play_player_footsteps			\Default Work Unit\Play_player_footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	833819801	player_switches_footsteps			\player_switches\player_switches_footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	concrete	player_switches_footsteps			
+	2058049674	wood	player_switches_footsteps			
+	2195636714	dirt	player_switches_footsteps			
+	2473969246	metal	player_switches_footsteps			
+	4248645337	grass	player_switches_footsteps			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2216764076	player_rtpc_footsteps			\player_rtpc_workunit\player_rtpc_footsteps	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
