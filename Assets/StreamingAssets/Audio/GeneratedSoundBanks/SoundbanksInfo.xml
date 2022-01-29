@@ -16,11 +16,11 @@
 			<ShortName>soundbank_master</ShortName>
 			<Path>soundbank_master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="98439365" Name="Play_player_footsteps" ObjectPath="\Events\Default Work Unit\Play_player_footsteps">
+				<Event Id="98439365" Name="Play_player_footsteps" ObjectPath="\Events\Default Work Unit\Play_player_footsteps" DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<DefaultSwitchValue>{D84F4D21-7B71-4493-B1F9-908772FA3799}</DefaultSwitchValue>
 					<SwitchContainers/>
 				</Event>
-				<Event Id="4064894420" Name="Play_player_water_charge" ObjectPath="\Events\Default Work Unit\Play_player_water_charge">
+				<Event Id="4064894420" Name="Play_player_water_charge" ObjectPath="\Events\Default Work Unit\Play_player_water_charge" DurationType="OneShot" DurationMin="0.301338" DurationMax="0.395127">
 					<IncludedMemoryFiles>
 						<File Id="234795143" Language="SFX">
 							<ShortName>sfx__water_charge_02.wav</ShortName>
