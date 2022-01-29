@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/torbjornsvendsen/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/Wwise_Projects/solarpunk/</ProjectRoot>
+		<SourceFilesRoot>/Users/torbjornsvendsen/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/Wwise_Projects/solarpunk/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/torbjornsvendsen/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/Unity_Projects/SolarPunk/Assets/StreamingAssets/Audio/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/torbjornsvendsen/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/Wwise_Projects/solarpunk/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="520809977" Language="SFX" Hash="3128366799">
+			<ObjectPath>\SoundBanks\Default Work Unit\soundbank_master</ObjectPath>
+			<ShortName>soundbank_master</ShortName>
+			<Path>soundbank_master.bnk</Path>
+			<IncludedEvents>
+				<Event Id="98439365" Name="Play_player_footsteps" ObjectPath="\Events\Default Work Unit\Play_player_footsteps">
+					<DefaultSwitchValue>{D84F4D21-7B71-4493-B1F9-908772FA3799}</DefaultSwitchValue>
+					<SwitchContainers/>
+				</Event>
+				<Event Id="1264143859" Name="Play_player_pot_drop" ObjectPath="\Events\Default Work Unit\Play_player_pot_drop"/>
+				<Event Id="1602700800" Name="Play_player_pot_pickup" ObjectPath="\Events\Default Work Unit\Play_player_pot_pickup"/>
+				<Event Id="4064894420" Name="Play_player_water_charge" ObjectPath="\Events\Default Work Unit\Play_player_water_charge">
+					<IncludedMemoryFiles>
+						<File Id="234795143" Language="SFX">
+							<ShortName>sfx__water_charge_02.wav</ShortName>
+							<Path>SFX/sfx__water_charge_02_10C4C929.wem</Path>
+						</File>
+						<File Id="718014491" Language="SFX">
+							<ShortName>sfx__water_charge_06.wav</ShortName>
+							<Path>SFX/sfx__water_charge_06_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{BDD4A4B2-748C-4C9E-ADED-BCE1DD09F92D}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BDD4A4B2-748C-4C9E-ADED-BCE1DD09F92D}">
+							<Media>
+								<File Id="234795143"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{916732C8-EF44-415B-B3B9-F8B72CC74D7B}">
+							<Media>
+								<File Id="718014491"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1031746375" Name="player_rtpc_water_charge" ObjectPath="\Game Parameters\player_rtpc_workunit\player_rtpc_water_charge"/>
+				<GameParameter Id="2216764076" Name="player_rtpc_footsteps" ObjectPath="\Game Parameters\player_rtpc_workunit\player_rtpc_footsteps"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="238911056" Name="player_switches_water_charge" ObjectPath="\Switches\player_switches\player_switches_water_charge" GUID="{4B8A47E5-CE0B-4F8B-803D-B8A694C90781}">
+					<Switches>
+						<Switch Id="2058998913" Name="water_charge" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge" GUID="{BDD4A4B2-748C-4C9E-ADED-BCE1DD09F92D}"/>
+						<Switch Id="1840801075" Name="water_charge_full" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_full" GUID="{916732C8-EF44-415B-B3B9-F8B72CC74D7B}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="833819801" Name="player_switches_footsteps" ObjectPath="\Switches\player_switches\player_switches_footsteps" GUID="{402DCDF8-B623-4B4C-B7E6-7946195BF8CF}">
+					<Switches>
+						<Switch Id="2195636714" Name="dirt" ObjectPath="\Switches\player_switches\player_switches_footsteps\dirt" GUID="{AFCDD4BC-D659-470B-812B-FEAC2D232733}"/>
+						<Switch Id="4248645337" Name="grass" ObjectPath="\Switches\player_switches\player_switches_footsteps\grass" GUID="{70C10FBF-F0B1-413C-933F-B71A58593BF0}"/>
+						<Switch Id="2473969246" Name="metal" ObjectPath="\Switches\player_switches\player_switches_footsteps\metal" GUID="{28C27790-2061-465E-8EEB-A682E010A753}"/>
+						<Switch Id="841620460" Name="concrete" ObjectPath="\Switches\player_switches\player_switches_footsteps\concrete" GUID="{D84F4D21-7B71-4493-B1F9-908772FA3799}"/>
+						<Switch Id="2058049674" Name="wood" ObjectPath="\Switches\player_switches\player_switches_footsteps\wood" GUID="{4590A549-5EB0-4348-879F-9432BE5CE844}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2158172997">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
