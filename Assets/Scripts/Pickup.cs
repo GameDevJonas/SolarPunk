@@ -9,7 +9,7 @@ public class Pickup : MonoBehaviour
     private Collider myCollider;
     private Rigidbody myRb;
 
-    private bool isPickedUp;
+    public bool isPickedUp;
     private Transform targetPoint;
 
     private void Awake()
@@ -33,9 +33,10 @@ public class Pickup : MonoBehaviour
 
     public void PickMeUp(Transform holdPoint)
     {
+        isPickedUp = true;
         myRb.isKinematic = true;
         myRb.isKinematic = false;
-        myCollider.enabled = false;
+        myCollider.isTrigger = true;
         myRb.useGravity = false;
         transform.position = holdPoint.position;
         transform.SetParent(holdPoint);
@@ -46,7 +47,8 @@ public class Pickup : MonoBehaviour
     {
         //transform.localRotation = Quaternion.Euler(0, 0, 0);
         transform.SetParent(null);
-        myCollider.enabled = true;
+        isPickedUp = false;
+        myCollider.isTrigger = false;
         myRb.useGravity = true;
         Vector3 distance = transform.position - player.transform.position;
         float playerDistance = distance.x;
@@ -57,6 +59,17 @@ public class Pickup : MonoBehaviour
     public void SetStaticPosition(Transform targetPoint)
     {
         transform.position = targetPoint.position;
+        isPickedUp = true;
         //this.enabled = false;
+    }
+
+    public void EnableAfterSeconds(int seconds)
+    {
+        Invoke("EnableMe", seconds);
+    }
+
+    private void EnableMe()
+    {
+        isPickedUp = false;
     }
 }

@@ -24,7 +24,7 @@ public class PlayerPickup : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         GetInputs();
     }
@@ -54,7 +54,7 @@ public class PlayerPickup : MonoBehaviour
         return false;
     }
 
-    private void DropObject()
+    public void DropObject()
     {
         isHolding = false;
         manager.StartCoroutine(manager.PickUpInputs());

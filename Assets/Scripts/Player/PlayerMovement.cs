@@ -25,6 +25,11 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 hitNormal;
     public LayerMask whatIsGround;
 
+    public bool disableInputs;
+    private bool moveToTarget;
+    private Transform movingTarget;
+    private float moveTimer;
+
     private void Awake()
     {
         manager = GetComponent<PlayerManager>();
@@ -34,15 +39,17 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        moveTimer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetInputs();
+        if (!disableInputs) GetInputs();
         ApplyGravity();
         ApplyMovement();
+
+        if (moveToTarget) MovingToTarget();
     }
 
     private void FixedUpdate()
@@ -56,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector3(horizontalAxis, 0f, verticalAxis).normalized;
 
         isMoving = (horizontalAxis != 0 || verticalAxis != 0);
+
+        moveTimer = 0;
     }
 
     private void ApplyMovement()
@@ -82,6 +91,26 @@ public class PlayerMovement : MonoBehaviour
         verticalSpeed -= gravity * Time.deltaTime;
 
         direction.y = verticalSpeed;
+    }
+
+    public void MoveToPoint(Transform target)
+    {
+        disableInputs = true;
+        moveToTarget = true;
+        movingTarget = target;
+    }
+
+    private void MovingToTarget()
+    {
+        Vector3 targetPoint = Vector3.MoveTowards(transform.position, movingTarget.position, Mathf.Infinity).normalized;
+        direction = new Vector3(targetPoint.x, 0f, targetPoint.z).normalized;
+        float distance = Vector3.Distance(transform.position, movingTarget.position);
+        if(distance < 1f || moveTimer > 1)
+        {
+            disableInputs = false;
+            moveToTarget = false;
+        }
+        moveTimer += Time.deltaTime;
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)

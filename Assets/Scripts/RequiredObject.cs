@@ -37,9 +37,15 @@ public class RequiredObject : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && hasRequiredObject)
         {
-            onDeliver.Invoke();
             //executed = true;
+            Invoke("DeliverIt", 0f);
         }
+    }
+
+    private void DeliverIt()
+    {
+        player.DropObject();
+        onDeliver.Invoke();
     }
 
     private void CheckWhatPlayerHolding()
