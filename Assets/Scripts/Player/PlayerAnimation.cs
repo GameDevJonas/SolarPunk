@@ -41,7 +41,7 @@ public class PlayerAnimation : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, slopeRotation * transform.rotation, 10 * Time.deltaTime);
 
-            Debug.Log(hit.normal);
+            //Debug.Log(hit.normal);
         }
     }
 

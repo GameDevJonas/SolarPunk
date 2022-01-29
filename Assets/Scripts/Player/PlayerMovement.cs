@@ -16,9 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
     public float targetAngle;
 
-    private float horizontalAxis;
-    private float verticalAxis;
+    public float horizontalAxis;
+    public float verticalAxis;
     private Vector3 direction;
+
+    public bool isMoving;
 
     public Vector3 hitNormal;
     public LayerMask whatIsGround;
@@ -43,11 +45,17 @@ public class PlayerMovement : MonoBehaviour
         ApplyMovement();
     }
 
+    private void FixedUpdate()
+    {
+    }
+
     private void GetInputs()
     {
         horizontalAxis = Input.GetAxisRaw("Horizontal");
         verticalAxis = Input.GetAxisRaw("Vertical");
         direction = new Vector3(horizontalAxis, 0f, verticalAxis).normalized;
+
+        isMoving = (horizontalAxis != 0 || verticalAxis != 0);
     }
 
     private void ApplyMovement()
@@ -67,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.DrawRay(transform.position + new Vector3(0, 1, 0), Vector3.down * manager.anim.groundCheckDistance, Color.black);
         isGrounded = ((Vector3.Angle(Vector3.up, hitNormal) <= controller.slopeLimit) && ray);
 
-        Debug.Log(Vector3.Angle(Vector3.up, hitNormal));
+        //Debug.Log(Vector3.Angle(Vector3.up, hitNormal));
 
         if (isGrounded) verticalSpeed = 0;
 

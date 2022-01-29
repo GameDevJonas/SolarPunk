@@ -7,8 +7,11 @@ public class PlayerSunEnergy : MonoBehaviour
 {
     [Range(0, 100)] public float sunEnergy;
     [SerializeField] private float increaseValue;
+    [SerializeField] private float decreaseValue;
 
     public bool inSun;
+
+    public bool usingEnergy;
 
     [Header("UI")]
     [SerializeField] private Image fillImage;
@@ -30,6 +33,26 @@ public class PlayerSunEnergy : MonoBehaviour
     {
         if (inSun) InSunlight();
         UpdateUI();
+        CheckIfUsingEnergy();
+    }
+
+    public void StartPushBox()
+    {
+        usingEnergy = true;
+    }
+
+    public void StopPushingBox()
+    {
+        usingEnergy = false;
+    }
+
+
+    private void CheckIfUsingEnergy()
+    {
+        if (usingEnergy)
+        {
+            if (sunEnergy > 0) sunEnergy -= decreaseValue * Time.deltaTime;
+        }
     }
 
     private void InSunlight()
