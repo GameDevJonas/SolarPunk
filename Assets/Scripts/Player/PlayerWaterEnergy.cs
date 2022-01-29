@@ -38,7 +38,7 @@ public class PlayerWaterEnergy : MonoBehaviour
         {
             StartCoroutine(WaterSucc());
         }
-        if (!manager.pickup.isHolding && Input.GetKey(KeyCode.E) && canWater)
+        if (!manager.pickup.isHolding && Input.GetKeyDown(KeyCode.E) && canWater)
         {
             Watering();
         }
@@ -77,8 +77,10 @@ public class PlayerWaterEnergy : MonoBehaviour
 
     private void Watering()
     {
-        waterEnergy -= decreaseValue * Time.deltaTime;
+        waterEnergy -= currentWaterable.waterValue;
         currentWaterable.GrowMe();
+        manager.pickup.pickupCollider.waterables.Remove(currentWaterable);
+        currentWaterable = null;
     }
 
     private IEnumerator WaterSucc()

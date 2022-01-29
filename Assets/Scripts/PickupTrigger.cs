@@ -35,7 +35,7 @@ public class PickupTrigger : MonoBehaviour
         {
             water.Add(other.GetComponent<Water>());
         }
-        if (other.CompareTag("Waterable"))
+        if (other.CompareTag("Waterable") && !other.GetComponent<Waterable>().grown)
         {
             waterables.Add(other.GetComponent<Waterable>());
         }
