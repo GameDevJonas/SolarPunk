@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FF042CC9-E3BC-4825-83B7-9DF9B1C5FCBD}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{FF042CC9-E3BC-4825-83B7-9DF9B1C5FCBD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="soundbank_master" ID="{686CDFB2-AFA0-4FE2-A047-40661B842AE3}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{43765793-D25A-4E07-AC7B-CF3A542FD95B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_player_water_charge" ID="{DB7AEC4D-AD68-4193-A51F-EF32BA6EE3C1}" WorkUnitID="{94120113-AF67-4221-99F3-D082F47749EF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_player_footsteps" ID="{C0BBAD2D-3C0E-4661-A8E7-3A1CCFC29E53}" WorkUnitID="{94120113-AF67-4221-99F3-D082F47749EF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_player_pot_pickup" ID="{89B96808-82B5-4D1B-AF4E-7E2AA227550A}" WorkUnitID="{94120113-AF67-4221-99F3-D082F47749EF}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

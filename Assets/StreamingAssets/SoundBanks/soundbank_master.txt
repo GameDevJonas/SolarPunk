@@ -1,0 +1,29 @@
+Event	ID	Name			Wwise Object Path	Notes
+	98439365	Play_player_footsteps			\Default Work Unit\Play_player_footsteps	
+	1602700800	Play_player_pot_pickup			\Default Work Unit\Play_player_pot_pickup	
+	4064894420	Play_player_water_charge			\Default Work Unit\Play_player_water_charge	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	238911056	player_switches_water_charge			\player_switches\player_switches_water_charge	
+	833819801	player_switches_footsteps			\player_switches\player_switches_footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	1840801075	water_charge_full	player_switches_water_charge			
+	2058998913	water_charge	player_switches_water_charge			
+	841620460	concrete	player_switches_footsteps			
+	2058049674	wood	player_switches_footsteps			
+	2195636714	dirt	player_switches_footsteps			
+	2473969246	metal	player_switches_footsteps			
+	4248645337	grass	player_switches_footsteps			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1031746375	player_rtpc_water_charge			\player_rtpc_workunit\player_rtpc_water_charge	
+	2216764076	player_rtpc_footsteps			\player_rtpc_workunit\player_rtpc_footsteps	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	234795143	water_charge	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_02_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge		62160
+	718014491	water_charge_full	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_06_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_full		53220
+

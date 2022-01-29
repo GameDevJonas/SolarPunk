@@ -331,7 +331,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: c92c04ffbce3254883b79df9b1c5fcbd
     GuidInternal: 
-    m_lastTime: -8585581146584775808
+    m_lastTime: -8585581105674775808
     List:
     - name: soundbank_master
       guid: b2df6c68a0afe24fa04740661b842ae3
@@ -359,7 +359,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 1301129467af214299f3d082f47749ef
     GuidInternal: 
-    m_lastTime: -8585581146584775808
+    m_lastTime: -8585581105674775808
     List:
     - name: Play_player_footsteps
       guid: 2dadbbc00e3c6146a8e73a1ccfc29e53
@@ -375,6 +375,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2dadbbc00e3c6146a8e73a1ccfc29e53
       Path: Events/Default Work Unit/Play_player_footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_player_pot_pickup
+      guid: 0868b989b5821b4daf4e7e2aa227550a
+      id: 1602700800
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1301129467af214299f3d082f47749ef
+      - ElementName: Play_player_pot_pickup
+        ObjectType: 3
+        guid: 0868b989b5821b4daf4e7e2aa227550a
+      Path: Events/Default Work Unit/Play_player_pot_pickup
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -681,7 +698,7 @@ MonoBehaviour:
     m_lastTime: -8585581203584775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 070000000b0000000c0000006200000063000000
+  ExpandedWaapiItemIds: 070000000b0000000c0000002800000055000000560000006200000063000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
