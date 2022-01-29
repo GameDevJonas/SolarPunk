@@ -7,12 +7,8 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	833819801	player_switches_footsteps			\player_switches\player_switches_footsteps	
 
 Switch	ID	Name	Switch Group			Notes
-	1954192584	water_charge_04	player_switches_water_charge			
-	1954192585	water_charge_05	player_switches_water_charge			
-	1954192586	water_charge_06	player_switches_water_charge			
-	1954192589	water_charge_01	player_switches_water_charge			
-	1954192590	water_charge_02	player_switches_water_charge			
-	1954192591	water_charge_03	player_switches_water_charge			
+	1840801075	water_charge_full	player_switches_water_charge			
+	2058998913	water_charge	player_switches_water_charge			
 	841620460	concrete	player_switches_footsteps			
 	2058049674	wood	player_switches_footsteps			
 	2195636714	dirt	player_switches_footsteps			
@@ -27,10 +23,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	41920501	water_charge_04	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_04_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_04		68272
-	119719853	water_charge_01	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_01_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_01		62160
-	181855130	water_charge_03	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_03_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_03		61216
-	234795143	water_charge_02	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_02_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_02		62160
-	718014491	water_charge_06	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_06_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_06		53220
-	981098536	water_charge_05	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_05_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_05		69684
+	234795143	water_charge	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_02_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge		62160
+	718014491	water_charge_full	Y:\Desktop\Wwise_Projects\solarpunk\.cache\Windows\SFX\sfx__water_charge_06_10C4C929.wem		\Actor-Mixer Hierarchy\player_workunit\player_water_charge\water_charge_full		53220
 

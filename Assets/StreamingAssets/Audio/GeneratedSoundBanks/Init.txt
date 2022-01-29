@@ -3,12 +3,8 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	833819801	player_switches_footsteps			\player_switches\player_switches_footsteps	
 
 Switch	ID	Name	Switch Group			Notes
-	1954192584	water_charge_04	player_switches_water_charge			
-	1954192585	water_charge_05	player_switches_water_charge			
-	1954192586	water_charge_06	player_switches_water_charge			
-	1954192589	water_charge_01	player_switches_water_charge			
-	1954192590	water_charge_02	player_switches_water_charge			
-	1954192591	water_charge_03	player_switches_water_charge			
+	1840801075	water_charge_full	player_switches_water_charge			
+	2058998913	water_charge	player_switches_water_charge			
 	841620460	concrete	player_switches_footsteps			
 	2058049674	wood	player_switches_footsteps			
 	2195636714	dirt	player_switches_footsteps			

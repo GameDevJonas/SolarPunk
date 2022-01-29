@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="520809977" Language="SFX" Hash="1925842575">
+		<SoundBank Id="520809977" Language="SFX" Hash="139556633">
 			<ObjectPath>\SoundBanks\Default Work Unit\soundbank_master</ObjectPath>
 			<ShortName>soundbank_master</ShortName>
 			<Path>soundbank_master.bnk</Path>
@@ -22,18 +22,6 @@
 				</Event>
 				<Event Id="4064894420" Name="Play_player_water_charge" ObjectPath="\Events\Default Work Unit\Play_player_water_charge">
 					<IncludedMemoryFiles>
-						<File Id="41920501" Language="SFX">
-							<ShortName>sfx__water_charge_04.wav</ShortName>
-							<Path>SFX/sfx__water_charge_04_10C4C929.wem</Path>
-						</File>
-						<File Id="119719853" Language="SFX">
-							<ShortName>sfx__water_charge_01.wav</ShortName>
-							<Path>SFX/sfx__water_charge_01_10C4C929.wem</Path>
-						</File>
-						<File Id="181855130" Language="SFX">
-							<ShortName>sfx__water_charge_03.wav</ShortName>
-							<Path>SFX/sfx__water_charge_03_10C4C929.wem</Path>
-						</File>
 						<File Id="234795143" Language="SFX">
 							<ShortName>sfx__water_charge_02.wav</ShortName>
 							<Path>SFX/sfx__water_charge_02_10C4C929.wem</Path>
@@ -42,36 +30,12 @@
 							<ShortName>sfx__water_charge_06.wav</ShortName>
 							<Path>SFX/sfx__water_charge_06_10C4C929.wem</Path>
 						</File>
-						<File Id="981098536" Language="SFX">
-							<ShortName>sfx__water_charge_05.wav</ShortName>
-							<Path>SFX/sfx__water_charge_05_10C4C929.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{BDD4A4B2-748C-4C9E-ADED-BCE1DD09F92D}</DefaultSwitchValue>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{2D03821D-26BE-46E6-82DE-4F6048AF7D05}">
-							<Media>
-								<File Id="234795143"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{8E808C2E-BC18-447D-96E3-731918C19BED}">
-							<Media>
-								<File Id="181855130"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{4A827332-F308-497F-BCF9-D9473F4CF52F}">
-							<Media>
-								<File Id="41920501"/>
-							</Media>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{BDD4A4B2-748C-4C9E-ADED-BCE1DD09F92D}">
 							<Media>
-								<File Id="119719853"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{62C0B1B2-A699-481B-84C1-32AFC94091F2}">
-							<Media>
-								<File Id="981098536"/>
+								<File Id="234795143"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{916732C8-EF44-415B-B3B9-F8B72CC74D7B}">
@@ -89,12 +53,8 @@
 			<SwitchGroups>
 				<SwitchGroup Id="238911056" Name="player_switches_water_charge" ObjectPath="\Switches\player_switches\player_switches_water_charge" GUID="{4B8A47E5-CE0B-4F8B-803D-B8A694C90781}">
 					<Switches>
-						<Switch Id="1954192589" Name="water_charge_01" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_01" GUID="{BDD4A4B2-748C-4C9E-ADED-BCE1DD09F92D}"/>
-						<Switch Id="1954192590" Name="water_charge_02" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_02" GUID="{2D03821D-26BE-46E6-82DE-4F6048AF7D05}"/>
-						<Switch Id="1954192591" Name="water_charge_03" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_03" GUID="{8E808C2E-BC18-447D-96E3-731918C19BED}"/>
-						<Switch Id="1954192584" Name="water_charge_04" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_04" GUID="{4A827332-F308-497F-BCF9-D9473F4CF52F}"/>
-						<Switch Id="1954192585" Name="water_charge_05" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_05" GUID="{62C0B1B2-A699-481B-84C1-32AFC94091F2}"/>
-						<Switch Id="1954192586" Name="water_charge_06" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_06" GUID="{916732C8-EF44-415B-B3B9-F8B72CC74D7B}"/>
+						<Switch Id="2058998913" Name="water_charge" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge" GUID="{BDD4A4B2-748C-4C9E-ADED-BCE1DD09F92D}"/>
+						<Switch Id="1840801075" Name="water_charge_full" ObjectPath="\Switches\player_switches\player_switches_water_charge\water_charge_full" GUID="{916732C8-EF44-415B-B3B9-F8B72CC74D7B}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="833819801" Name="player_switches_footsteps" ObjectPath="\Switches\player_switches\player_switches_footsteps" GUID="{402DCDF8-B623-4B4C-B7E6-7946195BF8CF}">
@@ -108,7 +68,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4205926980">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1431760567">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
