@@ -7,6 +7,7 @@ public class PickupTrigger : MonoBehaviour
     public List<Pickup> pickupsInRange = new List<Pickup>();
     public List<Water> water = new List<Water>();
     public List<GameObject> objects = new List<GameObject>();
+    public List<Waterable> waterables = new List<Waterable>();
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,10 @@ public class PickupTrigger : MonoBehaviour
         {
             water.Add(other.GetComponent<Water>());
         }
+        if (other.CompareTag("Waterable"))
+        {
+            waterables.Add(other.GetComponent<Waterable>());
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -49,6 +54,10 @@ public class PickupTrigger : MonoBehaviour
         if (other.CompareTag("Water"))
         {
             water.Remove(other.GetComponent<Water>());
+        }
+        if (other.CompareTag("Waterable"))
+        {
+            waterables.Remove(other.GetComponent<Waterable>());
         }
     }
 }

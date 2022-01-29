@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Wall
   - Water
+  - Waterable
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,12 @@ public class PlayerWaterEnergy : MonoBehaviour
 
     [Range(0, 100)] public float waterEnergy;
     [SerializeField] private float suckTime;
+    [SerializeField] private float decreaseValue;
 
     public bool waterSucc;
+    public bool canWater;
+
+    private Waterable currentWaterable;
 
     [Header("UI")]
     [SerializeField] private Image fillImage;
@@ -34,6 +38,12 @@ public class PlayerWaterEnergy : MonoBehaviour
         {
             StartCoroutine(WaterSucc());
         }
+        if (!manager.pickup.isHolding && Input.GetKey(KeyCode.E) && canWater)
+        {
+            Watering();
+        }
+
+        canWater = (CheckForWaterablesInRange() && waterEnergy > 0);
 
         UpdateUI();
     }
@@ -50,6 +60,25 @@ public class PlayerWaterEnergy : MonoBehaviour
         if (manager.pickup.pickupCollider.water.Count > 0) currentWater = manager.pickup.pickupCollider.water[0];
 
         return currentWater;
+    }
+
+    private Waterable CheckForWaterablesInRange()
+    {
+        Waterable currentWable = null;
+
+        if (manager.pickup.pickupCollider.waterables.Count > 0)
+        {
+            currentWable = manager.pickup.pickupCollider.waterables[0];
+            currentWaterable = currentWable;
+        }
+
+        return currentWable;
+    }
+
+    private void Watering()
+    {
+        waterEnergy -= decreaseValue * Time.deltaTime;
+        currentWaterable.GrowMe();
     }
 
     private IEnumerator WaterSucc()
