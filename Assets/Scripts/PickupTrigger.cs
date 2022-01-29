@@ -5,6 +5,8 @@ using UnityEngine;
 public class PickupTrigger : MonoBehaviour
 {
     public List<Pickup> pickupsInRange = new List<Pickup>();
+    public List<Water> water = new List<Water>();
+    public List<GameObject> objects = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,14 @@ public class PickupTrigger : MonoBehaviour
         {
             pickupsInRange.Add(other.GetComponent<Pickup>());
         }
+        if (other.CompareTag("Wall"))
+        {
+            objects.Add(other.gameObject);
+        }
+        if (other.CompareTag("Water"))
+        {
+            water.Add(other.GetComponent<Water>());
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -32,21 +42,13 @@ public class PickupTrigger : MonoBehaviour
         {
             pickupsInRange.Remove(other.GetComponent<Pickup>());
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Pickup"))
+        if(other.CompareTag("Wall"))
         {
-            pickupsInRange.Add(collision.gameObject.GetComponent<Pickup>());
+            objects.Remove(other.gameObject);
         }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Pickup"))
+        if (other.CompareTag("Water"))
         {
-            pickupsInRange.Add(collision.gameObject.GetComponent<Pickup>());
+            water.Remove(other.GetComponent<Water>());
         }
     }
 }

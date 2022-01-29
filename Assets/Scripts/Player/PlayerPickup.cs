@@ -8,7 +8,9 @@ public class PlayerPickup : MonoBehaviour
 
     [SerializeField] private Pickup activePickup;
     [SerializeField] private Transform holdPoint;
-    [SerializeField] private PickupTrigger pickupCollider;
+    public PickupTrigger pickupCollider;
+
+    public bool isHolding;
 
     private void Awake()
     {
@@ -31,7 +33,7 @@ public class PlayerPickup : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (activePickup && !CheckForPickupInRange()) DropObject();
+            if (activePickup && !CheckForPickupInRange() && !CheckForWall()) DropObject();
             else if (!activePickup && CheckForPickupInRange()) PickUpObject(CheckForPickupInRange());
         }
     }
@@ -46,8 +48,15 @@ public class PlayerPickup : MonoBehaviour
         return currentObject;
     }
 
+    private bool CheckForWall()
+    {
+        if (pickupCollider.objects.Count > 0) return true;
+        return false;
+    }
+
     private void DropObject()
     {
+        isHolding = false;
         manager.StartCoroutine(manager.PickUpInputs());
         manager.anim.PickUpObject(false);
         activePickup.DropMe();
@@ -56,6 +65,7 @@ public class PlayerPickup : MonoBehaviour
 
     private void PickUpObject(Pickup pickupObject)
     {
+        isHolding = true;
         manager.StartCoroutine(manager.PickUpInputs());
         manager.anim.PickUpObject(false);
         activePickup = pickupObject;

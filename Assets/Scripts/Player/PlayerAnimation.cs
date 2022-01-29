@@ -11,6 +11,8 @@ public class PlayerAnimation : MonoBehaviour
     public float groundCheckDistance;
     public LayerMask whatIsGround;
 
+    public bool isSquishing;
+
     private void Awake()
     {
         manager = GetComponent<PlayerManager>();
@@ -70,8 +72,9 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    private IEnumerator SquishMe()
+    public IEnumerator SquishMe()
     {
+        isSquishing = true;
         while (spriteObject.localScale.y > .8f)
         {
             spriteObject.localScale -= new Vector3(0, .01f, 0);
@@ -88,6 +91,6 @@ public class PlayerAnimation : MonoBehaviour
         }
         spriteObject.localScale = new Vector3(spriteObject.localScale.x, 1, spriteObject.localScale.z);
 
-        yield return null;
+        isSquishing = false;
     }
 }

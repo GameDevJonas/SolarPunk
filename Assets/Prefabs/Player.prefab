@@ -140,6 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupsInRange: []
+  water: []
+  objects: []
 --- !u!1 &7766749850666904484
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,6 +156,7 @@ GameObject:
   - component: {fileID: 7766749850666904495}
   - component: {fileID: 7766749850666904494}
   - component: {fileID: 3290748754283809811}
+  - component: {fileID: 976714531840566107}
   - component: {fileID: 7766749850666904490}
   - component: {fileID: 7766749850666904491}
   m_Layer: 3
@@ -209,7 +212,12 @@ MonoBehaviour:
   speed: 6
   gravity: 9.8
   verticalSpeed: 0
+  isGrounded: 0
   targetAngle: -90
+  hitNormal: {x: 0, y: 0, z: 0}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &7766749850666904495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +231,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteObject: {fileID: 1271750163442996746}
+  groundCheckDistance: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &7766749850666904494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +250,7 @@ MonoBehaviour:
   activePickup: {fileID: 0}
   holdPoint: {fileID: 7766749850716474315}
   pickupCollider: {fileID: 4585471332537755406}
+  isHolding: 0
 --- !u!114 &3290748754283809811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +266,22 @@ MonoBehaviour:
   sunEnergy: 0
   increaseValue: 10
   inSun: 0
+  fillImage: {fileID: 0}
+--- !u!114 &976714531840566107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766749850666904484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4bf491ad8da7af459c367e1a44a58f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterEnergy: 0
+  suckTime: 3
+  waterSucc: 0
   fillImage: {fileID: 0}
 --- !u!136 &7766749850666904490
 CapsuleCollider:

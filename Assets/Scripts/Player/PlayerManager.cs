@@ -12,13 +12,29 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public IEnumerator SuckWater(float waitTime)
+    {
+        movement.enabled = false;
+        pickup.enabled = false;
+        float timer = 0;
+        while (timer <= waitTime)
+        {
+            if (!anim.isSquishing) anim.StartCoroutine(anim.SquishMe());
+            timer += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+        //yield return new WaitForSeconds(waitTime);
+        movement.enabled = true;
+        pickup.enabled = true;
     }
 
     public IEnumerator PickUpInputs()

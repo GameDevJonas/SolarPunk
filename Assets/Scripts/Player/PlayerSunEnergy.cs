@@ -13,6 +13,12 @@ public class PlayerSunEnergy : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Image fillImage;
 
+
+    private void Awake()
+    {
+        fillImage = GameObject.Find("SunEnergyFront").GetComponent<Image>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
