@@ -18,6 +18,11 @@ public class Pushable : MonoBehaviour
 
     private CharacterController controller;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource pushingLoop;
+    [SerializeField] private AudioSource pushEnd;
+    private bool endPushPlayed;
+
     private void Awake()
     {
         player = FindObjectOfType<PlayerManager>();
@@ -37,6 +42,15 @@ public class Pushable : MonoBehaviour
         {
             CheckForPlayer();
             CheckIfPlayerPush();
+        }
+        else
+        {
+            //pushingLoop.Stop();
+            //if (!pushEnd.isPlaying && !endPushPlayed)
+            //{
+            //    pushEnd.Play();
+            //    endPushPlayed = true;
+            //}
         }
     }
 
@@ -89,9 +103,17 @@ public class Pushable : MonoBehaviour
         {
             if (!player.sunEnergy.usingEnergy) player.sunEnergy.StartPushBox();
             controller.Move(translation);
+            endPushPlayed = false;
+            if (!pushingLoop.isPlaying) pushingLoop.Play();
         }
         else
         {
+            pushingLoop.Stop();
+            if(!pushEnd.isPlaying && !endPushPlayed)
+            {
+                pushEnd.Play();
+                endPushPlayed = true;
+            }
             if (player.sunEnergy.usingEnergy) player.sunEnergy.StopPushingBox();
         }
     }
@@ -108,6 +130,7 @@ public class Pushable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            pushingLoop.Stop();
             playerInRange = false;
             player.sunEnergy.StopPushingBox();
         }

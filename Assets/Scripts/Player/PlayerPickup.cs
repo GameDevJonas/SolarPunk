@@ -12,6 +12,12 @@ public class PlayerPickup : MonoBehaviour
 
     public bool isHolding;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource pickupSource;
+    [SerializeField] private AudioSource dropSource;
+    [SerializeField] private AudioClip[] pickupClips, dropClips;
+
+
     private void Awake()
     {
         manager = GetComponent<PlayerManager>();
@@ -56,6 +62,10 @@ public class PlayerPickup : MonoBehaviour
 
     public void DropObject()
     {
+        dropSource.clip = dropClips[Random.Range(0, dropClips.Length)];
+        dropSource.pitch = Random.Range(.8f, 1.2f);
+        dropSource.Play();
+
         isHolding = false;
         manager.StartCoroutine(manager.PickUpInputs());
         manager.anim.PickUpObject(false);
@@ -65,6 +75,10 @@ public class PlayerPickup : MonoBehaviour
 
     private void PickUpObject(Pickup pickupObject)
     {
+        pickupSource.clip = pickupClips[Random.Range(0, pickupClips.Length)];
+        pickupSource.pitch = Random.Range(.8f, 1.2f);
+        pickupSource.Play();
+
         isHolding = true;
         manager.StartCoroutine(manager.PickUpInputs());
         manager.anim.PickUpObject(false);

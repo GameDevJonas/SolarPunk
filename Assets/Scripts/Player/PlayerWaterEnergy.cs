@@ -19,6 +19,10 @@ public class PlayerWaterEnergy : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Image fillImage;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource waterCharge;
+    [SerializeField] private AudioSource waterDone;
+
     private void Awake()
     {
         manager = GetComponent<PlayerManager>();
@@ -94,9 +98,11 @@ public class PlayerWaterEnergy : MonoBehaviour
             float addValueTotal = 100 - waterEnergy;
             float addValue = addValueTotal / suckTime;
             waterEnergy += addValue;
+            waterCharge.Play();
             yield return new WaitForSeconds(dividedValue);
             //yield return new WaitForEndOfFrame();
         }
+        waterDone.Play();
         waterEnergy = 100;
         waterSucc = false;
     }

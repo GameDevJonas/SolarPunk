@@ -35,6 +35,7 @@ public class PlayerSunEnergy : MonoBehaviour
     void Update()
     {
         if (inSun) InSunlight();
+        else if(!inSun && solarLoop.isPlaying) solarLoop.Pause();
         UpdateUI();
         CheckIfUsingEnergy();
     }

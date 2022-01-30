@@ -30,10 +30,16 @@ public class PlayerMovement : MonoBehaviour
     private Transform movingTarget;
     private float moveTimer;
 
+    [SerializeField] private float footStepInterval;
+    private float footStepTimer;
+    [SerializeField] private AudioSource footStepSource;
+    [SerializeField] private AudioClip[] footStepClips;
+
     private void Awake()
     {
         manager = GetComponent<PlayerManager>();
         controller = GetComponent<CharacterController>();
+        disableInputs = false;
     }
 
     // Start is called before the first frame update
@@ -50,10 +56,23 @@ public class PlayerMovement : MonoBehaviour
         ApplyMovement();
 
         if (moveToTarget) MovingToTarget();
+
+        if (isMoving) FootStepCalc();
     }
 
-    private void FixedUpdate()
+    private void FootStepCalc()
     {
+        if(footStepTimer <= 0)
+        {
+            footStepSource.pitch = Random.Range(.8f, 1.2f);
+            footStepSource.clip = footStepClips[Random.Range(0, footStepClips.Length)];
+            footStepSource.Play();
+            footStepTimer = footStepInterval;
+        }
+        else
+        {
+            footStepTimer -= Time.deltaTime;
+        }
     }
 
     private void GetInputs()
