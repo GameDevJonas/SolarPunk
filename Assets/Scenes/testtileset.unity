@@ -461,3 +461,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &7863809217240962014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.407303
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.563318
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.9997883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873634, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863809217770873638, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
+      propertyPath: m_Name
+      value: MetalPushBox
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66eef8f0647140b498dda1985ee055bb, type: 3}
