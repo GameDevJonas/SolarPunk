@@ -62,6 +62,21 @@ TextureImporter:
   - first:
       213: -1684463607695679981
     second: Mall 1_1
+  - first:
+      213: 7276497494726441616
+    second: Mall 1_2
+  - first:
+      213: -1763585667911058644
+    second: Mall 1_3
+  - first:
+      213: -5603749740900038122
+    second: Mall 1_4
+  - first:
+      213: -5123052037892441588
+    second: Mall 1_5
+  - first:
+      213: 8649965033060296268
+    second: Mall 1_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -180,7 +195,7 @@ TextureImporter:
         width: 36
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +216,7 @@ TextureImporter:
         width: 39
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,6 +224,111 @@ TextureImporter:
       bones: []
       spriteID: 31ed93206459f98e0800000000000000
       internalID: -1684463607695679981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall 1_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 156
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a703e3bef4bf460800000000000000
+      internalID: 7276497494726441616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall 1_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 156
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bf03dcd2c7687e0800000000000000
+      internalID: -1763585667911058644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall 1_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 156
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a4773fc4b7b32b0800000000000000
+      internalID: -5603749740900038122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall 1_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 156
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a749b805347e8b0800000000000000
+      internalID: -5123052037892441588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall 1_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 156
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46eb1b3e59da0870800000000000000
+      internalID: 8649965033060296268
       vertices: []
       indices: 
       edges: []
