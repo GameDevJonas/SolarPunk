@@ -1,19 +1,67 @@
 fileFormatVersion: 2
-guid: 0c3c38a2497b5924381de3671be4b915
+guid: d2668938954b3cf4aadd92baee788c58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5131210611427972865
-    second: MallDoor_0
+      213: -2862961688057574507
+    second: Mall_0
   - first:
-      213: 2896547387525728876
-    second: MallDoor_1
+      213: -4975068957440824759
+    second: Mall_12
   - first:
-      213: 503643467618324959
-    second: MallDoor_2
+      213: 2766226397410859640
+    second: Mall_13
   - first:
-      213: 8436598457206884696
-    second: MallDoor_3
+      213: 218705405606169628
+    second: Mall_24
+  - first:
+      213: 5042733204806893152
+    second: Mall_25
+  - first:
+      213: 9124050529893354530
+    second: Mall_27
+  - first:
+      213: -6560003310040446473
+    second: Mall_28
+  - first:
+      213: -977367050964133862
+    second: Mall_30
+  - first:
+      213: 2670536201523289276
+    second: Mall_32
+  - first:
+      213: 1427843131790594705
+    second: Mall_33
+  - first:
+      213: -8021294655820029135
+    second: Mall_35
+  - first:
+      213: -7032572922547369045
+    second: Mall_38
+  - first:
+      213: -426657634771011957
+    second: Mall_39
+  - first:
+      213: -8416299892786315038
+    second: Mall_40
+  - first:
+      213: 7930684260407633520
+    second: Mall_41
+  - first:
+      213: -5906158704572046674
+    second: Mall_44
+  - first:
+      213: 3192845993861282517
+    second: Mall_45
+  - first:
+      213: -3184708620587437687
+    second: Mall_46
+  - first:
+      213: 1471066175445369871
+    second: Mall 1_0
+  - first:
+      213: -1684463607695679981
+    second: Mall 1_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +97,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -103,13 +151,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MallDoor_0
+      name: Mall_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 48
+        y: 154
         width: 32
-        height: 64
+        height: 32
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,29 +165,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10711e16dd8b53740800000000000000
-      internalID: 5131210611427972865
+      spriteID: 87a9bf9904c936620800000000000000
+      internalID: 2766226397410859640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MallDoor_1
+      name: Mall 1_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 64
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        x: 2
+        y: 154
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a8e8c908a923820800000000000000
-      internalID: 2896547387525728876
+      spriteID: f04838c74e64a6410800000000000000
+      internalID: 1471066175445369871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mall 1_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 155
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ed93206459f98e0800000000000000
+      internalID: -1684463607695679981
       vertices: []
       indices: 
       edges: []

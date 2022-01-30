@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: 7ccd63f8b57e0654ea98a0b95949bea4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8503543334948231165
+    second: Greenhouse_0
+  - first:
+      213: -7080481079662055576
+    second: Greenhouse_1
+  - first:
+      213: 5303697834859622355
+    second: Greenhouse_2
+  - first:
+      213: 2606262786686287655
+    second: Greenhouse_3
+  - first:
+      213: 1288905961100584462
+    second: Greenhouse_4
+  - first:
+      213: -4773676133666349049
+    second: Greenhouse_5
+  - first:
+      213: -2883765045340919166
+    second: Greenhouse_7
+  - first:
+      213: -5349617488719460054
+    second: Greenhouse_8
+  - first:
+      213: -1617218889435195209
+    second: Greenhouse_9
+  - first:
+      213: 2214343156412429013
+    second: Greenhouse_10
+  - first:
+      213: -4166152295214272784
+    second: Greenhouse_11
+  - first:
+      213: -3628062510573705733
+    second: Greenhouse_12
+  - first:
+      213: -3230050832553219833
+    second: Greenhouse_13
+  - first:
+      213: -8095240701501429342
+    second: Greenhouse_15
+  - first:
+      213: 1169814475307493873
+    second: Greenhouse_16
+  - first:
+      213: 6179104342459284201
+    second: Greenhouse_17
+  - first:
+      213: -5409086229009125941
+    second: Greenhouse_18
+  - first:
+      213: 1094284567840677759
+    second: Greenhouse_19
+  - first:
+      213: -2096391027671613556
+    second: Greenhouse_20
+  - first:
+      213: 3184766115275324603
+    second: Greenhouse_21
+  - first:
+      213: -2509582505471869019
+    second: Greenhouse_22
+  - first:
+      213: 145766127666026975
+    second: Greenhouse_24
+  - first:
+      213: -5739591958789522560
+    second: Greenhouse_25
+  - first:
+      213: -3053009878024198349
+    second: Greenhouse_26
+  - first:
+      213: 8413410389070949352
+    second: Greenhouse_27
+  - first:
+      213: 2756835680080438626
+    second: Greenhouse_28
+  - first:
+      213: -2180862464121361237
+    second: Greenhouse_29
+  - first:
+      213: -3930355250818234215
+    second: Greenhouse_31
+  - first:
+      213: -3840772829256930122
+    second: Greenhouse_32
+  - first:
+      213: 6439510852536528902
+    second: Greenhouse_33
+  - first:
+      213: 2228108145885846579
+    second: Greenhouse_34
+  - first:
+      213: -2209305348130184370
+    second: Greenhouse_35
+  - first:
+      213: -3462937868850039270
+    second: Greenhouse_37
+  - first:
+      213: -7904414557327873332
+    second: Greenhouse_38
+  - first:
+      213: 6259032056579514484
+    second: Greenhouse_39
+  - first:
+      213: 278273289225940883
+    second: Greenhouse_40
+  - first:
+      213: 8945522382585942914
+    second: Greenhouse_41
+  - first:
+      213: -7435064419067244558
+    second: Greenhouse_42
+  - first:
+      213: 8021376897429946322
+    second: Greenhouse_43
+  - first:
+      213: -1221083445555635522
+    second: Greenhouse_44
+  - first:
+      213: 3524619362932620815
+    second: Greenhouse_45
+  - first:
+      213: -1892797591900161502
+    second: Greenhouse_46
+  - first:
+      213: 4325353982953680186
+    second: Greenhouse 1_0
+  - first:
+      213: 3808511175178538268
+    second: Greenhouse 1_1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Greenhouse_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39faaca0510acd300800000000000000
+      internalID: 278273289225940883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenhouse_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28357582631e42c70800000000000000
+      internalID: 8945522382585942914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenhouse_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffc953bd4851d890800000000000000
+      internalID: -7435064419067244558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenhouse_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a731f5e9e6bb5e0800000000000000
+      internalID: -1892797591900161502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenhouse 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d66c1e78eb60c30800000000000000
+      internalID: 4325353982953680186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greenhouse 1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d4f974cbc8ad430800000000000000
+      internalID: 3808511175178538268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
