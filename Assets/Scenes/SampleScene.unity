@@ -2034,11 +2034,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4458202025193423025, guid: a8c09356cf1cfed4fa2a92ee7538de26, type: 3}
       propertyPath: m_Volume
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7658070779164701079, guid: a8c09356cf1cfed4fa2a92ee7538de26, type: 3}
       propertyPath: m_Volume
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8c09356cf1cfed4fa2a92ee7538de26, type: 3}
@@ -2476,10 +2476,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 976714531840566107, guid: 2628ef3dbe8063b4fac2b96155280e97, type: 3}
-      propertyPath: decreaseValue
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3290748754283809811, guid: 2628ef3dbe8063b4fac2b96155280e97, type: 3}
       propertyPath: fillImage
       value: 

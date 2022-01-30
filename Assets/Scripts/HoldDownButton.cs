@@ -27,12 +27,14 @@ public class HoldDownButton : MonoBehaviour
     private void PushDown()
     {
         button.localPosition = new Vector3(0, .2f, 0);
+        GetComponent<AudioSource>().Play();
         onPushDownEvents.Invoke();
     }
 
     private void Release()
     {
         button.localPosition = new Vector3(0, .65f, 0);
+        GetComponent<AudioSource>().Play();
         onReleaseEvents.Invoke();
     }
 

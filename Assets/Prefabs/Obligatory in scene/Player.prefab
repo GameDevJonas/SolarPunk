@@ -168,9 +168,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 27413aac22fa62e42943b19ca8d2ebc4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -326,9 +326,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f4b77831276640a43bdbe4ae9374b3df, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -455,7 +455,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 22aaa27ac37be474b9ab6c4514b135ef, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.143
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -838,7 +838,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2e80affe186bac448e122f80ba47e17, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.143
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1046,6 +1046,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 377001136da3be5428ac89807a099630, type: 3}
   - {fileID: 8300000, guid: 6d77f7caa2834684abb9f472c68ad2f0, type: 3}
   - {fileID: 8300000, guid: 3886d061500315140ac996d951fde46b, type: 3}
+  - {fileID: 8300000, guid: c777ee9d23cff144c959ff3b36336b40, type: 3}
+  - {fileID: 8300000, guid: ddd63eb2738a8b44d821248a7ea31f5a, type: 3}
 --- !u!114 &7766749850666904495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,11 +1085,9 @@ MonoBehaviour:
   pickupSource: {fileID: 6307600446906636594}
   dropSource: {fileID: 5638143849953956358}
   pickupClips:
-  - {fileID: 8300000, guid: bad8238c33cd76f43ac72e13a6240558, type: 3}
-  - {fileID: 8300000, guid: 9e62f15be26c6a84c93ef373c94ffd10, type: 3}
+  - {fileID: 8300000, guid: 27413aac22fa62e42943b19ca8d2ebc4, type: 3}
   dropClips:
-  - {fileID: 8300000, guid: 6dbcfbc094551664c96d7adeef27be38, type: 3}
-  - {fileID: 8300000, guid: c385c2ec13ab51e44a5071e5c0e691a0, type: 3}
+  - {fileID: 8300000, guid: f4b77831276640a43bdbe4ae9374b3df, type: 3}
 --- !u!114 &3290748754283809811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterEnergy: 0
   suckTime: 3
-  decreaseValue: 0
+  decreaseValue: 10
   waterSucc: 0
   canWater: 0
   fillImage: {fileID: 0}
@@ -1316,7 +1316,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
