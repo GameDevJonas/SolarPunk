@@ -16,6 +16,9 @@ public class PlayerSunEnergy : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Image fillImage;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource solarLoop;
+    [SerializeField] private AudioSource solarDone;
 
     private void Awake()
     {
@@ -25,7 +28,7 @@ public class PlayerSunEnergy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -57,8 +60,17 @@ public class PlayerSunEnergy : MonoBehaviour
 
     private void InSunlight()
     {
-        if (sunEnergy < 100) sunEnergy += increaseValue * Time.deltaTime;
-        if (sunEnergy > 100) sunEnergy = 100;
+        if (sunEnergy < 100)
+        {
+            if (!solarLoop.isPlaying) solarLoop.Play();
+            sunEnergy += increaseValue * Time.deltaTime;
+        }
+        if (sunEnergy > 100)
+        {
+            solarLoop.Stop();
+            solarDone.Play();
+            sunEnergy = 100;
+        }
     }
 
     private void UpdateUI()

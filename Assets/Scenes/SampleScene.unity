@@ -2686,10 +2686,6 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 746931706}
-    - target: {fileID: 8439872227607898688, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_StandbyUpdate
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8439872227607898695, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.48
@@ -2710,22 +2706,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.x
       value: 0.14910604
       objectReference: {fileID: 0}
-    - target: {fileID: 8439872227607898695, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8439872227607898695, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8439872228133295894, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_Damping
-      value: 0.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 8439872228263191110, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_UpdateMethod
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8439872228263191111, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.48
@@ -2737,22 +2717,6 @@ PrefabInstance:
     - target: {fileID: 8439872228263191111, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
       propertyPath: m_LocalPosition.z
       value: -11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8439872228415803944, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: Damping.x
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 8439872228415803945, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_LookaheadTime
-      value: 0.088
-      objectReference: {fileID: 0}
-    - target: {fileID: 8439872229040082081, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_LookAt
-      value: 
-      objectReference: {fileID: 746931706}
-    - target: {fileID: 8439872229040082081, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-      propertyPath: m_StandbyUpdate
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8439872229040082082, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2766,50 +2730,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -11
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8439872228263191105, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
---- !u!1 &8439872229183246132 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8439872228263191106, guid: 893681f7685b7794390c0dfa2bc43bbb, type: 3}
-  m_PrefabInstance: {fileID: 8439872229183246131}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8439872229183246133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8439872229183246132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68eca8bad17ad49cfa8282572dc75fcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
---- !u!114 &8439872229183246134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8439872229183246132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 063f4bab78d74478d912ba55edfffe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1001 &9061023636672858994
 PrefabInstance:
   m_ObjectHideFlags: 0
