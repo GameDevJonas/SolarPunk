@@ -1040,7 +1040,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   disableInputs: 0
-  footStepInterval: 0.5
+  footStepInterval: 2
   footStepSource: {fileID: 9078581085053964186}
   footStepClips:
   - {fileID: 8300000, guid: 377001136da3be5428ac89807a099630, type: 3}
@@ -1316,7 +1316,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.125
   m_Pitch: 1
   Loop: 0
   Mute: 0
