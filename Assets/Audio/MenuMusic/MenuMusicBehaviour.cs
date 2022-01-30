@@ -18,6 +18,13 @@ public class MenuMusicBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(musicSource.time)
+        if(musicSource.time >= introClip.length && !hasIntroPlayed)
+        {
+            musicSource.Stop();
+            musicSource.clip = mainLoop;
+            musicSource.loop = true;
+            musicSource.Play();
+            hasIntroPlayed = true;
+        }
     }
 }
